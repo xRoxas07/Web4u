@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         table {
+            border: 4px solid rgb(94, 184, 219);
+            background-color: rgb(100, 154, 190);
+            margin: 0,5cm;
+            padding-left: 2cm;
+            padding-right: 2cm;
+        }
+        p {
+            font-size: 17px;
+        }
+        tr {
+            background-color: rgb(113, 204, 169);
+        }
+        pre {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 4px solid rgb(94, 184, 219);
+            background-color: rgb(100, 154, 190);
+            width: 400px;
+        }
+        ul,ol {
+        list-style-type:none;
+        }
+        .nav li a {
+            background-color: rgb(94, 184, 219);
+            color:floralwhite;
+            text-decoration:none;
+            padding: 20px 25px;
+            display:block;
+        }
+        .nav li a:hover{
+            background-color:rgb(23, 72, 129);
+        }
+        .nav > li {
+            float:left;
+        }
+        .nav li ul{
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul {
+            display: inline-block;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color:rgb(23, 72, 129);
+        }
+        .opacity1 {
+            background-color: rgb(100, 154, 190);
+            width: 300px;
+            height: 150px;
+        }
+        .opacity2 {
+            background-color: rgb(100, 154, 190);
+            width: 300px;
+            height: 150px;
+            opacity: 0.6;
+        }
+        .opacity3 {
+            background-color: rgb(100, 154, 190);
+            width: 300px;
+            height: 150px;
+            opacity: 0.3;
+        }
+        .opacity4 {
+            background-color: rgb(100, 154, 190);
+            width: 300px;
+            height: 150px;
+            opacity: 0.1;
+        }
+        div{
+            float: left;
+            margin-bottom: 10px;
+        }
+        div p {
+            text-align: center;
+        }
+
+    </style>
+    <h1 style="background-color: rgb(100, 154, 190); color: white; height: 70px; margin: 0cm; padding:10px ;">CSS Background</h1>
+    <p>The CSS background properties are used to add background effects for elements.</p>
+    <h2>Color Names</h2>
+
+    <h2>CSS background-color</h2>
+    <p>The <color style="color: dodgerblue;">background-color</color> property specifies the background color of an element.</p>
+    <h2>Example:</h2>
+
+    
+    <pre style="width: 500px;">
+        body {
+            <color style="color: rgb(3, 108, 212);">background-color</color>: <color style="color: blue;">ligthblue</color>;
+        }
+    </pre>
+    <p>With CSS, a color is most often specified by:
+        <ul>
+            <li>a valid color name - like "red"</li>
+            <li>a HEX value - like "#ff0000"</li>
+            <li>an RGB value - like "rgb(255,0,0)"</li>
+        </ul>
+    </p>
+    <p>Look at <a href="https://www.w3schools.com/cssref/css_colors_legal.asp">CSS Color Values</a> for a complete list of possible color values.</p>
+    <hr>
+    <h2>Other elements</h2>
+    <p>You can set the background color for any HTML elements:</p>
+    
+    <h2>Example:</h2>
+
+    <pre style="width: 500px;">
+        h1 {
+            <color style="color: rgb(3, 108, 212);">background-color</color>: <color style="color: blue;">green</color>;
+        }
+
+        div {
+            <color style="color: rgb(3, 108, 212);">background-color</color>: <color style="color: blue;">ligthblue</color>;
+        }
+
+        p {
+            <color style="color: rgb(3, 108, 212);">background-color</color>: <color style="color: blue;">yellow</color>;
+        }
+    </pre>
+    <hr>
+    <h2>Opacity / Transparency</h2>
+    <p>The <color style="color: dodgerblue;">opacity</color> property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:</p>
+
+    <div class="opacity1">
+        <p>Opacity 1</p>
+    </div>
+    <div class="opacity2">
+        <p>Opacity 0.6</p>
+    </div>
+    <div class="opacity3">
+        <p>Opacity 0.3</p>
+    </div>
+    <div class="opacity4">
+        <p>Opacity 0.1</p>
+    </div>
+
+    
+
+    <h2 style="margin-top: 200px;">Example:</h2>
+
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">background-color</color>: <color style="color: blue;">ligthblue</color>;
+            <color style="color: rgb(3, 108, 212);">opacity</color>: <color style="color: blue;">0.3</color>;
+        }
+
+    </pre>
+    
+    <h2>Transparency using RGBA</h2>
+    <p>If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text:</p>
+    <div>
+    <div class="opacity1">
+        <p>100% opacity</p>
+    </div>
+    <div class="opacity2">
+        <p>60% opacity</p>
+    </div>
+    <div class="opacity3">
+        <p>30% opacity</p>
+    </div>
+    <div class="opacity4">
+        <p>10% opacity</p>
+    </div>
+    </div>
+
+    <p style="margin-top: 200PX;">You learned from our <a href="HTMLColors.html" style="margin-top: 200px;">CSS Colors Chapter</a>, that you can use RGB as a color value. In addition to RGB, you can use an RGB color value with an alpha channel (RGBA) - which specifies the opacity for a color.</p>
+    <p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+    <h2>Example:</h2>
+
+    <pre style="width: 600px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">background</color>: <color style="color: blue;">rgba(0, 128, 0, 0.3)</color> /* Green background with 30% opacity */
+        }
+    </pre>
+    <hr>
+    <h2>Learn more about Color Values</h2>
+    <p>You will learn more about <a href="https://www.w3schools.com/html/html_colors_rgb.asp">RGB</a> , <a href="https://www.w3schools.com/html/html_colors_hex.asp">HEX</a> and <a href="https://www.w3schools.com/html/html_colors_hsl.asp">HSL</a> in the next chapters.</p>
+
+    <h2>CSS background-image</h2>
+    <p>The <color style="color: dodgerblue;">background-image</color> property specifies an image to use as the background of an element.</p>
+    <p>By default, the image is repeated so it covers the entire element.</p>
+
+    <h2>Example</h2>
+    <p>Set the background image for a page:</p>
+
+    <pre>
+        body {
+            <color style="color: rgb(3, 108, 212);">background-image</color>: <color style="color: blue;">url("paper.gif")</color>;
+        }
+    </pre>
+
+    <h2>Example</h2>
+    <p>This example shows a bad combination of text and background image. The text is hardly readable: </p>
+    <pre>
+        body {
+            <color style="color: rgb(3, 108, 212);">background-image</color>: <color style="color: blue;">url("bgdesert.jpg")</color>;
+        }
+    </pre>
+    <ul class="nav">
+        <li><a href="Web4U_Ingles.html">Back</a></li>
+
+        <li><a href="">Lenguage</a>
+        <ul>
+            <li><a href="CSSBackground.html"><img src="Imagenes\Icono_esp.PNG" alt="Idioma_ingles" style="height:50px; width: 50px; margin: 1px; padding: 1px;"></a></li>
+        </ul>
+        </li>
+    </ul>
+</body>

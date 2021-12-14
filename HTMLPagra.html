@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         table {
+            border: 4px solid rgb(169, 219, 94);
+            background-color: rgb(168, 204, 113);
+            margin: 0,5cm;
+            padding-left: 2cm;
+            padding-right: 2cm;
+        }
+        p {
+            font-size: 17px;
+        }
+        tr {
+            background-color: rgb(168, 204, 113);
+        }
+        pre {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 4px solid rgb(169, 219, 94);
+            background-color: rgb(168, 204, 113);
+            width: 400px;
+        }
+        ul,ol {
+        list-style-type:none;
+        }
+        .nav li a {
+            background-color: rgb(169, 219, 94);
+            color:floralwhite;
+            text-decoration:none;
+            padding: 20px 25px;
+            display:block;
+        }
+        .nav li a:hover{
+            background-color:rgb(23, 129, 23);
+        }
+        .nav > li {
+            float:left;
+        }
+        .nav li ul{
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        
+
+    </style>
+    <h1 style="background-color: rgb(169, 219, 94);">HTML Paragraphs</h1>
+    <p>Un párrafo siempre comienza en una nueva línea y generalmente es un bloque de texto.</p>
+    <hr>
+    <h2>HTML Paragraphs</h2>
+    <p>El elemento HTML <color style="color: blue;">&#60;p&#62;</color> define un párrafo</p>
+    <p>Un párrafo siempre comienza en una nueva línea y los navegadores agregan automáticamente un espacio en blanco (un margen) antes y después de un párrafo.</p>
+    <h2>Ejemplo:</h2>
+
+    <pre>
+        <color style="color: blue;">&#60;p&#62;</color>This is a paragraph.<color style="color: blue;">&#60;/p&#62;</color>
+        <color style="color: blue;">&#60;p&#62;</color>This is another paragraph. <color style="color: blue;">&#60;/p&#62;</color>
+    </pre>
+    <hr>
+    <h2>HTML Display</h2>
+    <p>No puede estar seguro de cómo se mostrará el HTML.</p>
+    <p>Las pantallas grandes o pequeñas y las ventanas redimensionadas generarán resultados diferentes.</p>
+    <p>Con HTML, no puede cambiar la visualización agregando espacios o líneas adicionales en su código HTML.</p>
+    <p>El navegador eliminará automáticamente los espacios y líneas adicionales cuando se muestre la página:</p>
+    <h2>Ejemplo:</h2>
+    
+    <pre>
+        <color style="color: blue;">&#60;p&#62;</color>
+        This paragraph
+        contains a lot of lines
+        in the source code,
+        but the browser
+        ignores it.
+        <color style="color: blue;">&#60;/p&#62;</color>
+
+        <color style="color: blue;">&#60;p&#62;</color>
+        This paragraph
+        contains         a lot of spaces
+        in the source         code,
+        but the        browser
+        ignores it.
+        <color style="color: blue;">&#60;/p&#62;</color>
+    </pre>
+    <hr>
+    <h2>HTML Horizontal Rules</h2>
+    <p>La etiqueta <color style="color: blue;">&#60;hr&#62;</color> define una pausa temática en una página HTML y, por lo general, se muestra como una regla horizontal.</p>
+    <p>El elemento <color style="color: blue;">&#60;hr&#62;</color> es usado para separar el contenido (o definir un cambio) en una página HTML:</p>
+    <h2>Example:</h2>
+
+    <pre>
+        <color style="color: blue;">&#60;h1&#62;</color>This is heading 1<color style="color: blue;">&#60;/h1&#62;</color>
+        <color style="color: blue;">&#60;p&#62;</color>This is some text.<color style="color: blue;">&#60;/p&#62;</color>
+        <color style="color: blue;">&#60;hr&#62;</color>
+        <color style="color: blue;">&#60;h2&#62;</color>This is heading 2<color style="color: blue;">&#60;/h2&#62;</color>
+        <color style="color: blue;">&#60;p&#62;</color>This is some other text.<color style="color: blue;">&#60;/p&#62;</color>
+        <color style="color: blue;">&#60;hr&#62;</color>
+    </pre>
+    <p>La etiqueta <color style="color: blue;">&#60;hr&#62;</color> es lo que significa que no tiene etiqueta final. </p>
+    <hr>
+    <h2>HTML Line Breaks</h2>
+    <p>El elemento HTML <color style="color: blue;">&#60;br&#62;</color> define un salto de línea.</p>
+    <p>Usa <color style="color: blue;">&#60;br&#62;</color> si desea un salto de línea (una nueva línea) sin comenzar un nuevo párrafo:</p>
+    <h2>Ejemplo:</h2>
+
+    <pre>
+        <color style="color: blue;">&#60;p&#62;</color>This is<color style="color: blue;">&#60;br&#62;</color>with line breaks.<color style="color: blue;">&#60;/p&#62;</color>
+    </pre>
+    <hr>
+    <h2>HTML Line Breaks</h2>
+    <p>Este poema se mostrará en un solo:</p>
+    
+    <pre>
+        <color style="color: blue;">&#60;p&#62;</color>
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+
+        Oh, bring back my Bonnie to me.
+
+        <color style="color: blue;">&#60;/p&#62;</color>
+    </pre>
+
+    <h2>Solución - El elemento <color style="color: blue;">&#60;pre&#62;</color></h2>
+    <p>El elemento <color style="color: blue;">&#60;pre&#62;</color> define texto preformateado.</p>
+    <p>El texto dentro del <color style="color: blue;">&#60;pre&#62;</color>  es mostrado en una fuente de ancho fijo (generalmente Courier) y conserva tanto los espacios como los saltos de línea: </p>
+
+    <pre>
+        <color style="color: blue;">&#60;pre&#62;</color>
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+
+        Oh, bring back my Bonnie to me.
+        <color style="color: blue;">&#60;/pre&#62;</color>
+
+    </pre>
+    <ul class="nav">
+        <li><a href="Web4U.html">Volver</a></li>
+
+        <li><a href="">Idioma</a>
+        <ul>
+            <li><a href="HTMLPagra_Ingles.html"><img src="Imagenes\Icono_ing.PNG" alt="Idioma_ingles" style="height:50px; width: 50px; margin: 1px; padding: 1px;"></a></li>
+        </ul>
+        </li>
+    </ul>
+</body>

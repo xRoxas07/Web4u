@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         table {
+            border: 4px solid rgb(94, 184, 219);
+            background-color: rgb(100, 154, 190);
+            margin: 0,5cm;
+            padding-left: 2cm;
+            padding-right: 2cm;
+        }
+        p {
+            font-size: 17px;
+        }
+        tr {
+            background-color: rgb(113, 204, 169);
+        }
+        pre {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 4px solid rgb(94, 184, 219);
+            background-color: rgb(100, 154, 190);
+            width: 400px;
+        }
+        .nav {
+        list-style-type:none;
+        }
+        .nav li a {
+            background-color: rgb(94, 184, 219);
+            color:floralwhite;
+            text-decoration:none;
+            padding: 20px 25px;
+            display:block;
+        }
+        .nav li a:hover{
+            background-color:rgb(23, 72, 129);
+        }
+        .nav > li {
+            float:left;
+        }
+        .nav li ul{
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color:rgb(23, 72, 129);
+        }
+
+    </style>
+    <h1 style="background-color: rgb(100, 154, 190); color: white; height: 70px; margin: 0cm; padding:10px ;">CSS Padding</h1>
+    <p>Padding se utiliza para crear espacio alrededor del contenido de un elemento, dentro de los bordes definidos. </p>
+
+    <p style="padding: 70px; border: cyan solid 1px;">This element has a margin of 70px.</p>
+
+    <p>Las propiedades <color style="color: dodgerblue;">padding</color> se utilizan para generar espacio alrededor del contenido de un elemento, dentro de los bordes definidos. </p>
+    <p>Con CSS, tienes control total sobre el relleno. Existen propiedades para configurar el relleno para cada lado de un elemento (superior, derecha, inferior e izquierda).</p>
+    <hr>
+
+    <h2>Padding - Lados indiviaduales</h2>
+   
+    <p>CSS tiene propiedades para especificar el relleno para cada lado de un elemento:
+        <ul>
+            <li><color style="color: dodgerblue;">padding-top</color></li>
+            <li><color style="color: dodgerblue;">padding-right</color></li>
+            <li><color style="color: dodgerblue;">padding-bottom</color></li>
+            <li><color style="color: dodgerblue;">padding-left</color></li>
+        </ul>
+
+    <p>Todas las propiedades de relleno pueden tener los siguientes valores:
+        <ul>
+            <li><color style="color: dodgerblue;">length</color> - specifies a margin in px, pt, cm, etc.</li>
+            <li><color style="color: dodgerblue;">%</color> -specifies a margin in % of the width of the containing element</li>
+            <li><color style="color: dodgerblue;">inherit</color> - specifies that the margin should be inherited from the parent element</li>
+        </ul>
+    <p><strong>Nota:</strong> Los valores negativos están permitidos.</p>
+
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">padding-top</color>: <color style="color: blue;">100px</color>;
+            <color style="color: rgb(3, 108, 212);">padding-bottom</color>: <color style="color: blue;">100px</color>;
+            <color style="color: rgb(3, 108, 212);">padding-right</color>: <color style="color: blue;">150px</color>;
+            <color style="color: rgb(3, 108, 212);">padding-left</color>: <color style="color: blue;">80px</color>;
+        }
+    </pre>
+    <hr>
+
+    <h2>Padding - Propiedad de taquigrafía</h2>
+    <p>Para acortar el código, es posible especificar todas las propiedades de los márgenes en una propiedad.</p>
+    <p>La propiedad <color style="color: dodgerblue;">padding</color> es una propiedad abreviada para las siguientes propiedades de relleno individuales:
+        <ul>
+            <li><color style="color: dodgerblue;">padding-top</color></li>
+            <li><color style="color: dodgerblue;">padding-right</color></li>
+            <li><color style="color: dodgerblue;">padding-bottom</color></li>
+            <li><color style="color: dodgerblue;">padding-left</color></li>
+        </ul>
+    </p>
+    <p>Pues así es como funciona: </p>
+    <p>Si la propiedad <color style="color: dodgerblue;">padding</color> tiene cuatro valores:
+        <ul>
+            <li><strong>padding: 25px 50px 75px 100px;</strong>
+                <ul>
+                <li><color style="color: dodgerblue;">top padding is 25px</color></li>
+                <li><color style="color: dodgerblue;">right padding is 50px</color></li>
+                <li><color style="color: dodgerblue;">bottom padding is 75px</color></li>
+                <li><color style="color: dodgerblue;">left padding is 100px</color></li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+
+    <h2>Ejemplo:</h2>
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">padding</color>: <color style="color: blue;"> 25px 50px 75px 100px</color>;
+        }
+    </pre>
+
+    <p>Si la propiedad <color style="color: dodgerblue;">padding</color> tiene tres valores:
+        <ul>
+            <li><strong>padding: 25px 50px 75px;</strong>
+                <ul>
+                <li><color style="color: dodgerblue;">top padding is 25px</color></li>
+                <li><color style="color: dodgerblue;">right padding is 50px</color></li>
+                <li><color style="color: dodgerblue;">bottom padding is 75px</color></li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    
+    <h2>Ejemplo:</h2>
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">padding</color>: <color style="color: blue;"> 25px 50px 75px</color>;
+        }
+    </pre>
+
+    <p>Si la propiedad <color style="color: dodgerblue;">padding</color> tiene dos valores:
+        <ul>
+            <li><strong>padding: 25px 50px;</strong>
+                <ul>
+                <li><color style="color: dodgerblue;">top padding is 25px</color></li>
+                <li><color style="color: dodgerblue;">right padding is 50px</color></li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    
+    <h2>Example:</h2>
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">padding</color>: <color style="color: blue;"> 25px 50px</color>;
+        }
+    </pre>
+
+    <p>Si la propiedad <color style="color: dodgerblue;">padding</color> tiene un valor:
+        <ul>
+            <li><strong>padding: 25px;</strong>
+                <ul>
+                <li><color style="color: dodgerblue;">top padding is 25px</color></li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    
+    <h2>Ejemplo:</h2>
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">padding</color>: <color style="color: blue;"> 25px</color>;
+        }
+    </pre>
+    <hr>
+
+    <h2>Padding y el Elemento Width</h2>
+    <p>La propiedad CSS <color style="color: dodgerblue;">width</color> especifica el ancho del área de contenido del elemento. El área de contenido es la parte que se encuentra dentro del relleno, el borde y el margen de un elemento <a href="https://www.w3schools.com/css/css_boxmodel.asp">(the box model)</a>.</p>
+    <p>Entonces, si un elemento tiene un ancho específico, el relleno agregado a ese elemento se agregará al ancho total del elemento. A menudo, este es un resultado no deseado.</p>
+    
+    <h2>Ejemplo:</h2>
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">width</color>: <color style="color: blue;"> 300px</color>;
+            <color style="color: rgb(3, 108, 212);">padding</color>: <color style="color: blue;">25px</color>;
+        }
+    </pre>
+
+    <p>Para mantener el ancho en 300 px, sin importar la cantidad de relleno, puede usar la propiedad de tamaño de caja. Esto hace que el elemento mantenga su ancho real; <br> 
+        si aumenta el relleno, el espacio de contenido disponible disminuirá.</p>
+
+        <h2>Ejemplo:</h2>
+        <pre style="width: 500px;">
+            div {
+                <color style="color: rgb(3, 108, 212);">width</color>: <color style="color: blue;"> 300px</color>;
+                <color style="color: rgb(3, 108, 212);">padding</color>: <color style="color: blue;">25px</color>;
+                <color style="color: rgb(3, 108, 212);">box-sizing</color>: <color style="color: blue;">border-box</color>;
+            }
+        </pre>
+    
+    <ul class="nav">
+        <li><a href="Web4U.html">Volver</a></li>
+
+        <li><a href="">Idioma</a>
+        <ul>
+            <li><a href="CSSPadding_Ingles.html"><img src="Imagenes\Icono_ing.PNG" alt="Idioma_ingles" style="height:50px; width: 50px; margin: 1px; padding: 1px;"></a></li>
+        </ul>
+        </li>
+    </ul>
+</body>

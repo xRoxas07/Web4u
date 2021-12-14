@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         table {
+            border: 4px solid rgb(94, 184, 219);
+            background-color: rgb(100, 154, 190);
+            margin: 0,5cm;
+            padding-left: 2cm;
+            padding-right: 2cm;
+        }
+        p {
+            font-size: 17px;
+        }
+        tr {
+            background-color: rgb(113, 204, 169);
+        }
+        pre {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 4px solid rgb(94, 184, 219);
+            background-color: rgb(100, 154, 190);
+            width: 400px;
+        }
+        ul,ol {
+        list-style-type:none;
+        }
+        .nav li a {
+            background-color: rgb(94, 184, 219);
+            color:floralwhite;
+            text-decoration:none;
+            padding: 20px 25px;
+            display:block;
+        }
+        .nav li a:hover{
+            background-color:rgb(23, 72, 129);
+        }
+        .nav > li {
+            float:left;
+        }
+        .nav li ul{
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color:rgb(23, 72, 129);
+        }
+        .example {
+            height: 200px;
+            width: 50%;
+            background-color: rgb(100, 154, 190);
+        }
+
+        .example2 {
+            height: 100px;
+            width: 500PX;
+            background-color: rgb(100, 154, 190);
+        }
+        .example3 {
+            max-width: 500px;
+            height: 100px;
+            background-color:rgb(100, 154, 190);
+        }
+
+    </style>
+    <h1 style="background-color: rgb(100, 154, 190); color: white; height: 70px; margin: 0cm; padding:10px ;">CSS Height and Width</h1>
+    <p>Las propiedades del CSS <color style="color: dodgerblue;">height</color> y <color style="color: dodgerblue;">width</color> se utilizan para establecer la altura y el ancho de un elemento.</p>
+    <p>La propiedad del <color style="color: dodgerblue;">max-width</color> utiliza para establecer el ancho máximo de un elemento.</p>
+    <hr>
+    
+    <h2>CSS Setting height and width</h2>
+    <p>Las propiedades de <color style="color: dodgerblue;">height</color> y <color style="color: dodgerblue;">width</color> se utilizan para establecer la altura y el ancho de un elemento.</p>
+    <p>Las propiedades de alto y ancho no incluyen relleno, bordes ni márgenes. Establece la altura / ancho del área dentro del relleno, el borde y el margen del elemento.</p>
+    <hr>
+
+    <h2>Valores de CSS height and width</h2>
+
+    <p>Las prpiedades <color style="color: dodgerblue;">height</color> y <color style="color: dodgerblue;">width</color> pueden tener los siguientes valores:
+        <ul>
+            <li><color style="color: dodgerblue;">auto</color> - Esto es predeterminado. El navegador calcula la altura y el ancho.</li>
+            <li><color style="color: dodgerblue;">length</color> - Define la altura / ancho en px, cm, etc.</li>
+            <li><color style="color: dodgerblue;">%</color> - Define la altura / ancho en porcentaje del bloque contenedor.</li>
+            <li><color style="color: dodgerblue;">initial</color> - Establece la altura / ancho a su valor predeterminado.</li>
+            <li><color style="color: dodgerblue;">inherit</color> - El alto / ancho se heredará de su valor principal.</li>
+        </ul>
+    </p>
+    <hr>
+    <h2>CSS height and width Examples</h2>
+
+    <div class="example">
+        <p>Este elemento tiene una altura de 200 píxeles y un ancho del 50%. </p>
+    </div>
+
+    <h2>Ejemplo:</h2>
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">heigth</color>: <color style="color: blue;">200px</color>;
+            <color style="color: rgb(3, 108, 212);">width</color>: <color style="color: blue;">50%</color>;
+            <color style="color: rgb(3, 108, 212);">background-color</color>: <color style="color: blue;">powerblue</color>;
+        }
+    </pre>
+
+    <div class="example2">
+        <p>Este elemento tiene una altura de 100 píxeles y un ancho de 500 píxeles.</p>
+    </div>
+
+    <h2>Ejemplo:</h2>
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">heigth</color>: <color style="color: blue;">100px</color>;
+            <color style="color: rgb(3, 108, 212);">width</color>: <color style="color: blue;">500px</color>;
+            <color style="color: rgb(3, 108, 212);">background-color</color>: <color style="color: blue;">powerblue</color>;
+        }
+    </pre>
+    <hr>
+
+    <h2>Ajustando max-width</h2>
+    <p>La propiedad <color style="color: dodgerblue;">max-width</color> se utiliza para establecer el ancho máximo de un elemento.</p>
+    <p>El <color style="color: dodgerblue;">max-width</color> puede especificar en valores de longitud, como px, cm, etc., o en porcentaje (%) del bloque contenedor, o establecer en ninguno (esto es predeterminado. Significa que no hay un ancho máximo).</p>
+    <p>El problema con <color style="color: blue;">&#60;div&#62;</color> ocurre cuando la ventana del navegador es más pequeña que el ancho del elemento (500px). Luego, el navegador agrega una barra de desplazamiento horizontal a la página. </p>
+    <p>El <color style="color: dodgerblue;">max-width</color> en lugar, en estas situaciones, mejorara el manejo del navegador de ventanas pequeñas. </p>
+    <p><strong>Consejo:</strong> Arrastre la ventana del navegador a menos de 500px de ancho para ver la diferencia entre los dos divs.</p>
+
+    <div class="example3">
+        <p>Este elemento tiene una altura de 100 píxeles y un ancho máximo de 500 píxeles.</p>
+    </div>
+
+    <p><strong>Nota:</strong> Si por alguna razón usa la propiedad width y la propiedad max-width en el mismo elemento, y el valor de la propiedad width es mayor que la propiedad max-width; se utilizará la propiedad de ancho máximo (y se ignorará la propiedad de ancho).</p>
+    
+    <h2>Ejemplo:</h2>
+
+    <pre>
+        div {
+            <color style="color: rgb(3, 108, 212);">max-with</color>: <color style="color: blue;">500px</color>;
+            <color style="color: rgb(3, 108, 212);">heigth</color>: <color style="color: blue;">100px</color>;
+            <color style="color: rgb(3, 108, 212);">background-color</color>: <color style="color: blue;">powerblue</color>;
+        }
+    </pre>
+
+    <ul class="nav">
+        <li><a href="Web4U.html">Volver</a></li>
+
+        <li><a href="">Idioma</a>
+        <ul>
+            <li><a href="CSSHyW_Ingles.html"><img src="Imagenes\Icono_ing.PNG" alt="Idioma_ingles" style="height:50px; width: 50px; margin: 1px; padding: 1px;"></a></li>
+        </ul>
+        </li>
+    </ul>
+</body>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         table {
+            border: 4px solid rgb(94, 184, 219);
+            background-color: rgb(100, 154, 190);
+            margin: 0,5cm;
+            padding-left: 2cm;
+            padding-right: 2cm;
+        }
+        p {
+            font-size: 17px;
+        }
+        tr {
+            background-color: rgb(113, 204, 169);
+        }
+        pre {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 4px solid rgb(94, 184, 219);
+            background-color: rgb(100, 154, 190);
+            width: 400px;
+        }
+        .nav {
+        list-style-type:none;
+        }
+        .nav li a {
+            background-color: rgb(94, 184, 219);
+            color:floralwhite;
+            text-decoration:none;
+            padding: 20px 25px;
+            display:block;
+        }
+        .nav li a:hover{
+            background-color:rgb(23, 72, 129);
+        }
+        .nav > li {
+            float:left;
+        }
+        .nav li ul{
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color:rgb(23, 72, 129);
+        }
+
+    </style>
+    <h1 style="background-color: rgb(100, 154, 190); color: white; height: 70px; margin: 0cm; padding:10px ;">The CSS Box Model</h1>
+    <p>All HTML elements can be considered as boxes.</p>
+
+    <p>In CSS, the term "box model" is used when talking about design and layout.</p>
+    <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. <br> 
+        The image below illustrates the box model:</p>
+
+        <img src="Imagenes\boxmodel.PNG" alt="">
+    <hr>
+    <h2>Padding - Individual Sides</h2>
+   
+    <p>Explanation of the different parts:
+        <ul>
+            <li><color style="color: dodgerblue;"> <strong>Content</strong></color> - The content of the box, where text and images appear</li>
+            <li><color style="color: dodgerblue;"><strong>Padding</strong> - Clears an area around the content. The padding is transparent</color></li>
+            <li><color style="color: dodgerblue;"><strong>Border</strong> - A border that goes around the padding and content</color></li>
+            <li><color style="color: dodgerblue;"><strong>Margin</strong> - Clears an area outside the border. The margin is transparent</color></li>
+        </ul>
+
+    <p>The box model allows us to add a border around elements, and to define space between elements.</p>
+
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">width</color>: <color style="color: blue;">300px</color>;
+            <color style="color: rgb(3, 108, 212);">border</color>: <color style="color: blue;">15px solid green</color>;
+            <color style="color: rgb(3, 108, 212);">padding</color>: <color style="color: blue;">50px</color>;
+            <color style="color: rgb(3, 108, 212);">margin</color>: <color style="color: blue;">20px</color>;
+        }
+    </pre>
+    <hr>
+
+    <h2>Width and Height of an Element</h2>
+    <p>In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.</p>
+    <p><strong>Important:</strong> When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full <br> size of an element, you must also add padding, borders and margins.</p>
+    
+    <h2>Example:</h2>
+    <p>This &#60;div&#62; element will have a total width of 350px</p>
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">width</color>: <color style="color: blue;">300px</color>;
+            <color style="color: rgb(3, 108, 212);">border</color>: <color style="color: blue;">15px solid green</color>;
+            <color style="color: rgb(3, 108, 212);">padding</color>: <color style="color: blue;">50px</color>;
+            <color style="color: rgb(3, 108, 212);">margin</color>: <color style="color: blue;">20px</color>;
+        }
+    </pre>
+
+    <p>Here is the calculation</p>
+    <div style="border:cyan solid 1px; border-left:cyan solid 5px;">
+        
+            320px (width) <br>
+            + 20px (left + right padding) <br>
+            + 10px (left + right border) <br>
+            + 0px (left + right margin) <br>
+            <strong>= 350px</strong>
+     
+    </div>
+    
+    <p>The total width of an element should be calculated like this:</p>
+    <p>Total element width = width + left padding + right padding + left border + right border + left margin + right margin</p>
+    <p>The total height of an element should be calculated like this:</p>
+    <p>Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</p>
+
+    
+    <ul class="nav">
+        <li><a href="Web4U_Ingles.html">Back</a></li>
+
+        <li><a href="">Lenguage</a>
+        <ul>
+            <li><a href="CSSBox_Model.html"><img src="Imagenes\Icono_esp.PNG" alt="Idioma_ingles" style="height:50px; width: 50px; margin: 1px; padding: 1px;"></a></li>
+        </ul>
+        </li>
+    </ul>
+</body>

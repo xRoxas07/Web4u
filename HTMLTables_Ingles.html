@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         table {
+            border: 4px solid rgb(169, 219, 94);
+            background-color: rgb(168, 204, 113);
+            margin: 0,5cm;
+            padding-left: 2cm;
+            padding-right: 2cm;
+        }
+        p {
+            font-size: 17px;
+        }
+        pre {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 4px solid rgb(169, 219, 94);
+            background-color: rgb(168, 204, 113);
+            width: 400px;
+        }
+        tr {
+            background-color: rgb(168, 204, 113);
+        }
+        td, th{
+            border: 4px solid rgb(23, 129, 23);
+
+        }
+        ul,ol {
+        list-style-type:none;
+        }
+        .nav li a {
+            background-color: rgb(169, 219, 94);
+            color:floralwhite;
+            text-decoration:none;
+            padding: 20px 25px;
+            display:block;
+        }
+        .nav li a:hover{
+            background-color:rgb(23, 129, 23);
+        }
+        .nav > li {
+            float:left;
+        }
+        .nav li ul{
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        
+
+    </style>
+    <h1 style="background-color: rgb(169, 219, 94);">HTML Tables</h1>
+    <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+    <h2>Define an HTML Table</h2>
+    <p>A table in HTML consists of table cells inside rows and columns</p>
+    <h2>Examples:</h2>
+    
+         <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+           </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+             <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+        </table>
+
+
+    <h2>Table cells</h2>
+    <p>Each table cell is defined by a<color style="color: blue;">&#60;td&#62;</color> and a <color style="color: blue;">&#60;/td&#62;</color> tag</p>
+    <p>Everything between<color style="color: blue;">&#60;td&#62;</color> and<color style="color: blue;">&#60;/td&#62;</color> are the content of the table cell. </p>
+    <h2>Example:</h2>
+
+        <pre>
+             <color style="color: blue;">&#60;table&#62;</color>
+                <color style="color: blue;">&#60;tr&#62;</color>
+                     <color style="color: blue;">&#60;td&#62;</color>Emil<color style="color: blue;">&#60;/td&#62;</color>
+                     <color style="color: blue;">&#60;td&#62;</color>Tobias<color style="color: blue;">&#60;/td&#62;</color>
+                     <color style="color: blue;">&#60;td&#62;</color>Linus<color style="color: blue;">&#60;/td&#62;</color>
+                 <color style="color: blue;">&#60;/tr&#62;</color>
+            <color style="color: blue;">&#60;/table&#62;</color>
+        </pre>
+
+    <h2>Table Headers</h2>
+    <p>Sometimes you want your cells to be headers, in those cases use the <color style="color: blue;">&#60;th&#62;</color> tag instead of the <color style="color: blue;">&#60;td&#62;</color> tags:</p>
+    <h2>Example:</h2>
+
+                <pre>
+                    <color style="color: blue;">&#60;table&#62;</color>
+                        <color style="color: blue;">&#60;tr&#62;</color>
+                            <color style="color: blue;">&#60;th&#62;</color>Person 1<color style="color: blue;">&#60;/th&#62;</color>
+                             <color style="color: blue;">&#60;th&#62;</color>Person 2<color style="color: blue;">&#60;/th&#62;</color>
+                             <color style="color: blue;">&#60;th&#62;</color>Person 3<color style="color: blue;">&#60;/th&#62;</color>
+                        <color style="color: blue;">&#60;/tr&#62;</color>
+                        <color style="color: blue;">&#60;tr&#62;</color>
+                            <color style="color: blue;">&#60;td&#62;</color>Emil<color style="color: blue;">&#60;/td&#62;</color>
+                             <color style="color: blue;">&#60;td&#62;</color>Tobias<color style="color: blue;">&#60;/td&#62;</color>
+                             <color style="color: blue;">&#60;td&#62;</color>Linus<color style="color: blue;">&#60;/td&#62;</color>
+                         <color style="color: blue;">&#60;/tr&#62;</color>
+                         <color style="color: blue;">&#60;tr&#62;</color>
+                            <color style="color: blue;">&#60;td&#62;</color>16<color style="color: blue;">&#60;/td&#62;</color>
+                             <color style="color: blue;">&#60;td&#62;</color>14<color style="color: blue;">&#60;/td&#62;</color>
+                             <color style="color: blue;">&#60;td&#62;</color>10<color style="color: blue;">&#60;/td&#62;</color>
+                         <color style="color: blue;">&#60;/tr&#62;</color>
+                    <color style="color: blue;">&#60;/table&#62;</color>
+                </pre>
+ 
+    <p>By default, the text in <color style="color: blue;">&#60;th&#62;</color> elements are bold and centered, but you can change that with CSS.</p>
+    <ul class="nav">
+        <li><a href="Web4U_Ingles.html">Back</a></li>
+
+        <li><a href="">Lenguage</a>
+        <ul>
+            <li><a href="HTMLTables.html"><img src="Imagenes\Icono_esp.PNG" alt="Idioma_ingles" style="height:50px; width: 50px; margin: 1px; padding: 1px;"></a></li>
+        </ul>
+        </li>
+    </ul>
+</body>

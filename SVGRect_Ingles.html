@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         table {
+            border: 4px solid rgb(219, 150, 94);
+            background-color: rgb(190, 128, 100);
+            margin: 0,5cm;
+            padding-left: 2cm;
+            padding-right: 2cm;
+        }
+        p {
+            font-size: 17px;
+        }
+        tr {
+            background-color: rgb(113, 204, 169);
+        }
+        pre {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 4px solid rgb(219, 150, 94);
+            background-color: rgb(190, 128, 100);
+            width: 400px;
+        }
+        .nav {
+        list-style-type:none;
+        }
+        .nav li a {
+            background-color: rgb(219, 150, 94);
+            color:floralwhite;
+            text-decoration:none;
+            padding: 20px 25px;
+            display:block;
+        }
+        .nav li a:hover{
+            background-color:rgb(129, 57, 23);
+        }
+        .nav > li {
+            float:left;
+        }
+        .nav li ul{
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color:rgb(129, 57, 23);
+        }
+
+    </style>
+    <h1 style="background-color: rgb(224, 136, 63); color: white; height: 70px; margin: 0cm; padding:10px ;">SVG &#60;rect&#62;</h1>
+    
+    <h2>SVG Shapes</h2>
+    <p>SVG has some predefined shape elements that can be used by developers:
+        <ul>
+            <li>Rectangle &#60;rect&#62;</li>
+            <li>Circle &#60;circle&#62;</li>
+            <li>Ellipse &#60;ellipse&#62;</li>
+            <li>Line &#60;line&#62;</li>
+            <li>Polyline &#60;polyline&#62;</li>
+            <li>Poligon &#60;polyligon&#62;</li>
+            <li>Path &#60;path&#62;</li>
+        </ul>
+    </p>
+    <p>The following chapters will explain each element, starting with the rect element.</p>
+
+    <h2>SVG Rectangle - &#60;rect&#62;</h2>
+    <h2>Example 1</h2>
+    <svg width="400" height="110">
+        <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+    </svg>
+
+    <p>Here is the SVG code:</p>
+   
+    <pre style="width: 700px;">
+
+        <color style="color: blue;">&#60;svg</color> <color style="color: rgb(3, 108, 212);">width</color>:<color style="color: blue;">"400"</color> <color style="color: rgb(3, 108, 212);">height</color>:<color style="color: blue;">"110"&#62;</color>
+            <color style="color: blue;">&#60;rect</color> <color style="color: rgb(3, 108, 212);">width</color>:<color style="color: blue;">"300"</color> <color style="color: rgb(3, 108, 212);">height</color>:<color style="color: blue;">"100"</color> <color style="color: rgb(3, 108, 212);">style</color>:<color style="color: blue;">"fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)"/&#62;</color>
+        <color style="color: blue;">&#60;/svg&#62;</color>
+    </pre>
+
+    <p><strong>Code explanation:</strong>
+        <ul>
+            <li>The width and height attributes of the &#60;rect&#62; element define the height and the width of the rectangle</li>
+            <li>The style attribute is used to define CSS properties for the rectangle</li>
+            <li>The CSS fill property defines the fill color of the rectangle</li>
+            <li>The CSS stroke-width property defines the width of the border of the rectangle</li>
+            <li>The CSS stroke property defines the color of the border of the rectangle</li>
+        </ul>
+    </p>
+    <hr>
+
+    <h2>What you should already know</h2>
+
+    <p>Before you continue, you should have some basic understanding of the following:
+        <ul>
+            <li>HTML</li>
+            <li>Basic HTML</li>
+        </ul>
+    </p>
+    <br>
+
+    <h2>Example 2</h2>
+    <p>Let's look at another example that contains some new attributes:</p>
+    <svg width="400" height="180">
+        <rect x="50" y="20" width="150" height="150"
+        style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+      </svg>
+        
+      <p>Here is the SVG code:</p>
+        <pre style="width: 950px;">
+
+            <color style="color: blue;">&#60;svg</color>  <color style="color: rgb(3, 108, 212);">width</color>:<color style="color: blue;">"400"</color> <color style="color: rgb(3, 108, 212);">height</color>:<color style="color: blue;">"180"&#62;</color>
+                <color style="color: blue;">&#60;rect</color> <color style="color: rgb(3, 108, 212);">x</color>:<color style="color: blue;">"50" <color style="color: rgb(3, 108, 212);">y</color>:<color style="color: blue;">"20" <color style="color: rgb(3, 108, 212);">width</color>:<color style="color: blue;">"150"</color> <color style="color: rgb(3, 108, 212);">height</color>:<color style="color: blue;">"150"</color> <color style="color: rgb(3, 108, 212);">style</color>:<color style="color: blue;">"fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9"/&#62;</color>
+            <color style="color: blue;">&#60;/svg&#62;</color>
+        </pre>
+        <p><strong>Code explanation:</strong>
+            <ul>
+                <li>The x attribute defines the left position of the rectangle (e.g. x="50" places the rectangle 50 px from the left margin)</li>
+                <li>The y attribute defines the top position of the rectangle (e.g. y="20" places the rectangle 20 px from the top margin)</li>
+                <li>The CSS fill-opacity property defines the opacity of the fill color (legal range: 0 to 1)</li>
+                <li>The CSS stroke-opacity property defines the opacity of the stroke color (legal range: 0 to 1)</li>
+            </ul>
+        </p>
+    <hr>
+
+    <h2>Example 3</h2>
+    <p>Define the opacity for the whole element:</p>
+
+    <svg width="400" height="180">
+        <rect x="50" y="20" width="150" height="150"
+        style="fill:blue;stroke:pink;stroke-width:5;opacity:0.5" />
+      </svg>
+
+    <p>Here is the SVG code:</p>
+      <pre style="width: 950px;">
+
+        <color style="color: blue;">&#60;svg</color>  <color style="color: rgb(3, 108, 212);">width</color>:<color style="color: blue;">"400"</color> <color style="color: rgb(3, 108, 212);">height</color>:<color style="color: blue;">"180"&#62;</color>
+            <color style="color: blue;">&#60;rect</color> <color style="color: rgb(3, 108, 212);">x</color>:<color style="color: blue;">"50" <color style="color: rgb(3, 108, 212);">y</color>:<color style="color: blue;">"20" <color style="color: rgb(3, 108, 212);">width</color>:<color style="color: blue;">"150"</color> <color style="color: rgb(3, 108, 212);">height</color>:<color style="color: blue;">"150"</color> <color style="color: rgb(3, 108, 212);">style</color>:<color style="color: blue;">"fill:blue;stroke:pink;stroke-width:5;opacity:0.5"/&#62;</color>
+        <color style="color: blue;">&#60;/svg&#62;</color>
+    </pre>
+
+    <p><strong>Code explanation:</strong>
+        <ul>
+            <li>The CSS opacity property defines the opacity value for the whole element (legal range: 0 to 1)</li>
+        </ul>
+    </p>
+    
+    
+    <ul class="nav">
+        <li><a href="Web4U_Ingles.html">Back</a></li>
+
+        <li><a href="">Lenguage</a>
+        <ul>
+            <li><a href="SVGRect.html"><img src="Imagenes\Icono_esp.PNG" alt="Idioma_ingles" style="height:50px; width: 50px; margin: 1px; padding: 1px;"></a></li>
+        </ul>
+        </li>
+    </ul>
+</body>

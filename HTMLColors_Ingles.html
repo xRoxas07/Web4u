@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         table {
+            border: 4px solid rgb(169, 219, 94);
+            background-color: rgb(168, 204, 113);
+            margin: 0,5cm;
+            padding-left: 2cm;
+            padding-right: 2cm;
+        }
+        p {
+            font-size: 17px;
+        }
+        tr {
+            background-color: rgb(168, 204, 113);
+        }
+        pre {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 4px solid rgb(169, 219, 94);
+            background-color: rgb(168, 204, 113);
+            width: 400px;
+        }
+        ul,ol {
+        list-style-type:none;
+        }
+        .nav li a {
+            background-color: rgb(169, 219, 94);
+            color:floralwhite;
+            text-decoration:none;
+            padding: 20px 25px;
+            display:block;
+        }
+        .nav li a:hover{
+            background-color:rgb(23, 129, 23);
+        }
+        .nav > li {
+            float:left;
+        }
+        .nav li ul{
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color:rgb(23, 129, 23);
+        }
+
+    </style>
+    <h1 style="background-color: rgb(169, 219, 94); color: white; height: 70px; margin: 0cm; padding:10px ;">HTML Colors</h1>
+    <p>HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</p>
+    <hr>
+    <h2>Color Names</h2>
+    <p>In HTML, a color can be specified by using a color name:</p>
+    <img src="Imagenes\Colores_Nombre.PNG" alt="Nombredecolores">
+    <p>HTML supports <a href="https://www.w3schools.com/colors/colors_names.asp">140 standard color names.</a></p>
+    <hr>
+
+    <h2>Background Color</h2>
+    <p>You can set the background color for HTML elements:</p>
+
+    <h2 style="background-color:rgb(25, 167, 172); color: white; text-align: center; width: 800px;">Hello World</h2>
+    <p style="background-color:rgb(199, 68, 68); color: white; text-align: center; width: 800px;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+         aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex 
+         ea commodo consequat.
+    </p>
+    <pre style="width: 500px;">
+        <color style="color: blue;">&#60;h1 style="background-color:DodgerBlue;&#62;</color>Hello World<color style="color: blue;">&#60;/h1&#62;</color>
+        <color style="color: blue;">&#60;p style="background-color:Tomato;"&#62;</color>Lorem ipsum...<color style="color: blue;">&#60;/p&#62;</color>
+    </pre>
+    <hr>
+
+    <h2>Text Color</h2>
+    <p>You can set the color of text:</p>
+    <h1 style="color:Tomato;">Hello World</h1>
+    <p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    <h2>Example:</h2>
+
+    <pre style="width: 500px;">
+        <color style="color: blue;">&#60;h1 style="color:Tomato;"&#62;</color>Hello World<color style="color: blue;">&#60;/h1&#62;</color>
+        <color style="color: blue;">&#60;h1 style="color:Tomato;"&#62;</color>Lorem ipsum...<color style="color: blue;">&#60;/p&#62;</color>
+        <color style="color: blue;">&#60;p style="color:MediumSeaGreen;"&#62;</color>Ut wisi enim...<color style="color: blue;">&#60;/p&#62;</color>
+    </pre>
+    <hr>
+    
+    <h2>Border Color</h2>
+    <p>You can set the color of borders:</p>
+    
+    <h1 style="border:2px solid Tomato; width: 500px;">Hello World</h1>
+    <h1 style="border:2px solid DodgerBlue; width: 500px;">Hello World</h1>
+    <h1 style="border:2px solid Violet; width: 500px;">Hello World</h1>
+
+    <h2>Example:</h2>
+
+    <pre style="width: 500px;">
+        <color style="color: blue;">&#60;h1 style="border:2px solid Tomato;"&#62;</color>Hello World<color style="color: blue;">&#60;/h1&#62;</color>
+        <color style="color: blue;">&#60;h1 style="border:2px solid DodgerBlue;"&#62;</color>Hello World<color style="color: blue;">&#60;/h1&#62;</color>
+        <color style="color: blue;">&#60;h1 style="border:2px solid Violet;"&#62;</color>Hello World<color style="color: blue;">&#60;/h1&#62;</color>
+
+    </pre>
+    <hr>
+
+    <h2>Color Values</h2>
+    <p>In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.</p>
+    <p>The following three <color style="color: blue;">&#60;div&#62;</color> elements have their background color set with RGB, HEX, and HSL values:</p>
+
+    <h1 style="background-color:rgb(255, 99, 71); color: white; width: 500px; height: 75px; text-align: center;">rgb(255, 99, 71)</h1>
+    <h1 style="background-color:#ff6347; color: white; width: 500px; height: 75px; text-align: center;">#ff6347</h1>
+    <h1 style="background-color:hsl(9, 100%, 64%);; color: white; width: 500px; height: 75px; text-align: center;">hsl(9, 100%, 64%)</h1>
+    <p>The following two <color style="color: blue;">&#60;div&#62;</color> elements have their background color set with RGBA and HSLA values, which adds an Alpha channel to the color (here we have 50% transparency):</p>
+
+    <h1 style="background-color:rgba(255, 99, 71, 0.5); color: white; width: 500px; height: 75px; text-align: center;">rgba(255, 99, 71, 0.5)</h1>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5); color: white; width: 500px; height: 75px; text-align: center;">hsla(9, 100%, 64%, 0.5)</h1>
+    <h2>Example:</h2>
+
+    <pre style="width: 500px;">
+        <color style="color: blue;">&#60;h1 style="background-color:rgb(255, 99, 71);"&#62;</color>...<color style="color: blue;">&#60;/h1&#62;</color>
+        <color style="color: blue;">&#60;h1 style="background-color:#ff6347;"&#62;</color>...<color style="color: blue;">&#60;/h1&#62;</color>
+        <color style="color: blue;">&#60;h1 style="background-color:hsl(9, 100%, 64%);"&#62;</color>...<color style="color: blue;">&#60;/h1&#62;</color>
+
+        <color style="color: blue;">&#60;h1 style="background-color:rgba(255, 99, 71, 0.5);"&#62;</color>...<color style="color: blue;">&#60;/h1&#62;</color>
+        <color style="color: blue;">&#60;h1 style="background-color:hsla(9, 100%, 64%, 0.5);"&#62;</color>...<color style="color: blue;">&#60;/h1&#62;</color>
+    </pre>
+    <hr>
+    
+    <h2>Learn more about Color Values</h2>
+    <p>You will learn more about <a href="https://www.w3schools.com/html/html_colors_rgb.asp">RGB</a> , <a href="https://www.w3schools.com/html/html_colors_hex.asp">HEX</a> and <a href="https://www.w3schools.com/html/html_colors_hsl.asp">HSL</a> in the next chapters.</p>
+    
+    
+    <ul class="nav">
+        <li><a href="Web4U_Ingles.html">Back</a></li>
+
+        <li><a href="">Lenguage</a>
+        <ul>
+            <li><a href="HTMLColors.html"><img src="Imagenes\Icono_esp.PNG" alt="Idioma_ingles" style="height:50px; width: 50px; margin: 1px; padding: 1px;"></a></li>
+        </ul>
+        </li>
+    </ul>
+</body>

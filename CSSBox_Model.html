@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         table {
+            border: 4px solid rgb(94, 184, 219);
+            background-color: rgb(100, 154, 190);
+            margin: 0,5cm;
+            padding-left: 2cm;
+            padding-right: 2cm;
+        }
+        p {
+            font-size: 17px;
+        }
+        tr {
+            background-color: rgb(113, 204, 169);
+        }
+        pre {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 4px solid rgb(94, 184, 219);
+            background-color: rgb(100, 154, 190);
+            width: 400px;
+        }
+        .nav {
+        list-style-type:none;
+        }
+        .nav li a {
+            background-color: rgb(94, 184, 219);
+            color:floralwhite;
+            text-decoration:none;
+            padding: 20px 25px;
+            display:block;
+        }
+        .nav li a:hover{
+            background-color:rgb(23, 72, 129);
+        }
+        .nav > li {
+            float:left;
+        }
+        .nav li ul{
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color:rgb(23, 72, 129);
+        }
+
+    </style>
+    <h1 style="background-color: rgb(100, 154, 190); color: white; height: 70px; margin: 0cm; padding:10px ;">El CSS Box Model</h1>
+    <p>Todos los elementos HTML se pueden considerar como cuadros.</p>
+
+    <p>En CSS, el término "box model" se usa cuando se habla de diseño y maquetación. </p>
+    <p>El modelo de caja CSS es esencialmente una caja que envuelve cada elemento HTML. Consiste en: márgenes, bordes, relleno y el contenido real.<br> 
+        La siguiente imagen ilustra el modelo de caja:</p>
+
+        <img src="Imagenes\boxmodel.PNG" alt="">
+    <hr>
+    <h2>Padding - Lados individuales</h2>
+   
+    <p>Explanation of the different parts:
+        <ul>
+            <li><color style="color: dodgerblue;"> <strong>Content</strong></color> - El contenido del cuadro, donde aparecen el texto y las imágenes.</li>
+            <li><color style="color: dodgerblue;"><strong>Padding</strong> - Limpia un área alrededor del contenido. El acolchado es transparente.</color></li>
+            <li><color style="color: dodgerblue;"><strong>Border</strong> - Un borde que rodea el relleno y el contenido.</color></li>
+            <li><color style="color: dodgerblue;"><strong>Margin</strong> - Limpia un área fuera del borde. El margen es transparente.</color></li>
+        </ul>
+
+    <p>El modelo de caja nos permite agregar un borde alrededor de los elementos y definir el espacio entre los elementos.</p>
+
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">width</color>: <color style="color: blue;">300px</color>;
+            <color style="color: rgb(3, 108, 212);">border</color>: <color style="color: blue;">15px solid green</color>;
+            <color style="color: rgb(3, 108, 212);">padding</color>: <color style="color: blue;">50px</color>;
+            <color style="color: rgb(3, 108, 212);">margin</color>: <color style="color: blue;">20px</color>;
+        }
+    </pre>
+    <hr>
+
+    <h2>La altura y la anchura de un elemento</h2>
+    <p>Para configurar correctamente el ancho y alto de un elemento en todos los navegadores, necesita saber cómo funciona el modelo de caja. </p>
+    <p><strong>Importante:</strong> Cuando establece las propiedades de ancho y alto de un elemento con CSS, simplemente establece el ancho y alto del área de contenido. Para calcular el tamaño completo <br> de un elemento, también debe agregar relleno, bordes y márgenes. </p>
+    
+    <h2>Ejemplo:</h2>
+    <p>Este elemento &#60;div&#62; tendrá un ancho total de 350px.</p>
+    <pre style="width: 500px;">
+        div {
+            <color style="color: rgb(3, 108, 212);">width</color>: <color style="color: blue;">300px</color>;
+            <color style="color: rgb(3, 108, 212);">border</color>: <color style="color: blue;">15px solid green</color>;
+            <color style="color: rgb(3, 108, 212);">padding</color>: <color style="color: blue;">50px</color>;
+            <color style="color: rgb(3, 108, 212);">margin</color>: <color style="color: blue;">20px</color>;
+        }
+    </pre>
+
+    <p>Aqui esta el calculo</p>
+    <div style="border:cyan solid 1px; border-left:cyan solid 5px;">
+        
+            320px (width) <br>
+            + 20px (left + right padding) <br>
+            + 10px (left + right border) <br>
+            + 0px (left + right margin) <br>
+            <strong>= 350px</strong>
+     
+    </div>
+    
+    <p>El ancho total de un elemento debe calcularse así:</p>
+    <p>TotThe total height of an element should be calculated like this:al elemento width = width + padding izquierdo + padding derecho + borde izquierdo + borde derecho + margin izquierdo + margin derecho</p>
+    <p>El height total de un elemento debe calcularse así:</p>
+    <p>Total element height = height + padding superior + padding inferior + borde superior + borde inferior + margin superior + margin inferior</p>
+
+    
+    <ul class="nav">
+        <li><a href="Web4U.html">Volver</a></li>
+
+        <li><a href="">Idioma</a>
+        <ul>
+            <li><a href="CSSBox_Model_Ingles.html"><img src="Imagenes\Icono_ing.PNG" alt="Idioma_ingles" style="height:50px; width: 50px; margin: 1px; padding: 1px;"></a></li>
+        </ul>
+        </li>
+    </ul>
+</body>

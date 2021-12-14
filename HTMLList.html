@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         table {
+            border: 4px solid rgb(169, 219, 94);
+            background-color: rgb(168, 204, 113);
+            margin: 0,5cm;
+            padding-left: 2cm;
+            padding-right: 2cm;
+        }
+        p {
+            font-size: 17px;
+        }
+        tr {
+            background-color: rgb(168, 204, 113);
+        }
+        pre {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 4px solid rgb(169, 219, 94);
+            background-color: rgb(168, 204, 113);
+            width: 400px;
+        }
+        ul,ol {
+        list-style-type:none;
+        }
+        .nav li a {
+            background-color: rgb(169, 219, 94);
+            color:floralwhite;
+            text-decoration:none;
+            padding: 20px 25px;
+            display:block;
+        }
+        .nav li a:hover{
+            background-color:rgb(23, 129, 23);
+        }
+        .nav > li {
+            float:left;
+        }
+        .nav li ul{
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        
+
+    </style>
+    <h1 style="background-color: rgb(169, 219, 94);">HTML List</h1>
+    <p>HTML lists permite a desalloradores de paginas web  agrupar un conjunto de objetos relacionados en una lista.</p>
+    <h2>Ejemplo:</h2>
+    <table>
+        <tr>
+            <th>Una lista no ordenada de HTML:</th>
+            <th>Una lista ordenada de HTML:</th>
+        </tr>
+        <tr>
+            <td>
+                <ul style="list-style-type: disc;;">
+                    <li>Objeto</li>
+                    <li>Objeto</li>
+                    <li>Objeto</li>
+                </ul>
+            </td>
+            <td>
+                <ol style="list-style-type: decimal;">
+                    <li>Primer objeto</li>
+                    <li>Segundo objeto</li>
+                    <li>Tercer objeto</li>
+                    <li>Cuarto objeto</li>
+
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Lista no ordenada HTML</h2>
+    <p>Una lista no ordenada empieza con la etiqueta <color style="color: blue;">&#60;ul&#62;</color>. Cada objeto de la lista empieza con la etiqueta <color style="color: blue;">&#60;li&#62;</color>.</p>
+    <p>La lista de objetos sera marcado con puntos (pequeños circulos negros) por defecto:</p>
+    <h2>Ejemplo:</h2>
+
+            <pre>
+                <color style="color: blue;">&#60;ul&#62;</color>
+                    <color style="color: blue;">&#60;li&#62;</color>Coffee<color style="color: blue;">&#60;/li&#62;</color>
+                    <color style="color: blue;">&#60;li&#62;</color>Tea<color style="color: blue;">&#60;/li&#62;</color>
+                    <color style="color: blue;">&#60;li&#62;</color>Milk<color style="color: blue;">&#60;/li&#62;</color>
+                <color style="color: blue;">&#60;/ul&#62;</color>
+            </pre>
+
+    <h2>Ordered HTML List</h2>
+    <p>An ordered list starts with the <color style="color: blue;">&#60;ol&#62;</color> tag. Each list item starts with the <color style="color: blue;">&#60;li&#62;</color> tag.</p>
+    <p>The list items will be marked with numbers by default:</p>
+    <h2>Example:</h2>
+
+    <pre>
+        <color style="color: blue;">&#60;ol&#62;</color>
+            <color style="color: blue;">&#60;li&#62;</color>Coffee<color style="color: blue;">&#60;/li&#62;</color>
+            <color style="color: blue;">&#60;li&#62;</color>Tea<color style="color: blue;">&#60;/li&#62;</color>
+            <color style="color: blue;">&#60;li&#62;</color>Milk<color style="color: blue;">&#60;/li&#62;</color>
+        <color style="color: blue;">&#60;/ol&#62;</color>
+    </pre>
+
+    <h2>HTML Description Lists</h2>
+    <p>HTML also supports description lists.</p>
+    <p>A description list is a list of terms, with a description of each term.</p>
+    <p>The <color style="color: blue;">&#60;dl&#62;</color> tag defines the description list, the <color style="color: blue;">&#60;dt&#62;</color> tag defines the term (name), and the <color style="color: blue;">&#60;dd&#62;</color> tag describes each term:</p>
+    <h2>Example:</h2>
+
+    <pre>
+        <color style="color: blue;">&#60;dl&#62;</color>
+            <color style="color: blue;">&#60;dt&#62;</color>Coffee<color style="color: blue;">&#60;/dt&#62;</color>
+            <color style="color: blue;">&#60;dd&#62;</color>- black hot drink<color style="color: blue;">&#60;/dd&#62;</color>
+            <color style="color: blue;">&#60;dt&#62;</color>Milk<color style="color: blue;">&#60;/dd&#62;</color>
+            <color style="color: blue;">&#60;dd&#62;</color>- white cold drink<color style="color: blue;">&#60;/dd&#62;</color>
+        <color style="color: blue;">&#60;/dl&#62;</color>
+    </pre>
+    <ul class="nav">
+        <li><a href="Web4U.html">Volver</a></li>
+
+        <li><a href="">Idioma</a>
+        <ul>
+            <li><a href="HTMLList.html"><img src="Imagenes\Icono_esp.PNG" alt="Idioma_ingles" style="height:50px; width: 50px; margin: 1px; padding: 1px;"></a></li>
+        </ul>
+        </li>
+    </ul>
+</body>

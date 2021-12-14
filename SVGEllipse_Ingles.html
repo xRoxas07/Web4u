@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         table {
+            border: 4px solid rgb(219, 150, 94);
+            background-color: rgb(190, 128, 100);
+            margin: 0,5cm;
+            padding-left: 2cm;
+            padding-right: 2cm;
+        }
+        p {
+            font-size: 17px;
+        }
+        tr {
+            background-color: rgb(113, 204, 169);
+        }
+        pre {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 4px solid rgb(219, 150, 94);
+            background-color: rgb(190, 128, 100);
+            width: 400px;
+        }
+        .nav {
+        list-style-type:none;
+        }
+        .nav li a {
+            background-color: rgb(219, 150, 94);
+            color:floralwhite;
+            text-decoration:none;
+            padding: 20px 25px;
+            display:block;
+        }
+        .nav li a:hover{
+            background-color:rgb(129, 57, 23);
+        }
+        .nav > li {
+            float:left;
+        }
+        .nav li ul{
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color:rgb(129, 57, 23);
+        }
+
+    </style>
+    <h1 style="background-color: rgb(224, 136, 63); color: white; height: 70px; margin: 0cm; padding:10px ;">SVG &#60;ellipse&#62;</h1>
+    <p>The &#60;ellipse&#62; element is used to create an ellipse.</p>
+
+    <svg height="140" width="500">
+        <ellipse cx="200" cy="80" rx="100" ry="50"
+        style="fill:yellow;stroke:purple;stroke-width:2" />
+    </svg>
+
+    <p>Here is the SVG code:</p>
+
+    <h2>Example:</h2>
+   
+    <pre style="width: 600px;">
+
+        <color style="color: blue;">&#60;svg</color> <color style="color: rgb(3, 108, 212);">width</color>:<color style="color: blue;">"140"</color> <color style="color: rgb(3, 108, 212);">height</color>:<color style="color: blue;">"500"&#62;</color>
+            <color style="color: blue;">&#60;ellipse</color> <color style="color: rgb(3, 108, 212);">cx</color>:<color style="color: blue;">"200"</color> <color style="color: rgb(3, 108, 212);">cy</color>:<color style="color: blue;">"80"</color> <color style="color: rgb(3, 108, 212);">rx</color>:<color style="color: blue;">"100"</color> <color style="color: rgb(3, 108, 212);">ry</color>:<color style="color: blue;">"50"</color> 
+            <color style="color: rgb(3, 108, 212);">style</color>:<color style="color: blue;">"fill:yellow;stroke:purple;stroke-width:2" /&#62;</color>
+        <color style="color: blue;">&#60;/svg&#62;</color>
+    </pre>
+    <p><strong>Code explanation:</strong>
+        <ul>
+            <li>The cx attribute defines the x coordinate of the center of the ellipse</li>
+            <li>The cy attribute defines the y coordinate of the center of the ellipse</li>
+            <li>The rx attribute defines the horizontal radius</li>
+            <li>The ry attribute defines the vertical radius</li>
+        </ul>
+    </p>
+    
+    <ul class="nav">
+        <li><a href="Web4U_Ingles.html">Back</a></li>
+
+        <li><a href="">Lenguage</a>
+        <ul>
+            <li><a href="SVGEllipse.html"><img src="Imagenes\Icono_esp.PNG" alt="Idioma_ingles" style="height:50px; width: 50px; margin: 1px; padding: 1px;"></a></li>
+        </ul>
+        </li>
+    </ul>
+</body>
